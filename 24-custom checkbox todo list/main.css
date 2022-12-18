@@ -1,0 +1,103 @@
+/* Start Variables */
+:root {
+	--main-color: #ed4c21;
+	--second-color: #122333;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	/* margin: 0; */
+}
+body {
+	background-color: #333;
+}
+/* End Global Rules */
+
+/* Start Commons  */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* End Commons  */
+.parent {
+	width: 900px;
+	background-color: #fff;
+	height: 400px;
+	padding: 0 50px;
+}
+.parent div {
+	background-color: #f9f9f9;
+	height: 60px;
+	padding: 0 40px;
+	position: relative;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+}
+.parent div label {
+	display: block;
+	cursor: pointer;
+}
+.parent div input {
+	display: none;
+}
+.parent div input + label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 4px;
+	left: 10px;
+	top: 18px;
+	border: 1px solid #d2d2d2;
+}
+.parent div input + label:active::after,
+.parent div input + label:active::before {
+	transform: scale(0);
+}
+.parent div input + label::after {
+	content: "";
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	border-radius: 3px;
+	left: 14px;
+	top: 22px;
+	vertical-align: bottom;
+	color: transparent;
+	transition: 0.2s;
+}
+.parent div input:checked + label::after {
+	background-color: #009688;
+}
+.parent div input:checked + label {
+	text-decoration: line-through;
+}
+.parent p {
+	background-color: #009688;
+	width: fit-content;
+	padding: 15px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	right: 62px;
+	margin-bottom: 50px;
+}
+.parent p::before {
+	content: "";
+	border: 8px solid;
+	border-color: transparent transparent #0c564f transparent;
+	position: absolute;
+	bottom: -8px;
+	left: 4px;
+	transform: rotate(45deg);
+}

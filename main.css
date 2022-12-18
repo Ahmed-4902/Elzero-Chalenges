@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+
+* {
+	font-family: "Outfit", sans-serif;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	--LColor: #0f0c29;
+	--MColor: #302b63;
+	--RColor: #24243e;
+}
+*,
+*::before,
+*::after {
+	cursor: pointer !important;
+}
+
+body {
+	width: 100%;
+	height: fit-content;
+	background: linear-gradient(to right, #000000, #434343);
+}
+
+body main {
+	padding: 2rem;
+}
+
+body main ul {
+	list-style: none;
+	padding: 0;
+
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+body main ul li a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+body main ul li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 0.25rem;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+body main ul li a img:nth-of-type(2) {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25rem;
+	display: block;
+}
+
+body main ul li a img:first-child {
+	position: absolute;
+	width: 2.5rem;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	transition: 0.5s;
+}
+body main ul li a h3 {
+	text-align: center;
+	color: white;
+	font-size: 0.8rem;
+	background-color: #678983;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	text-transform: capitalize;
+	transition: 0.5s;
+}
+
+body main ul li:hover a h3 {
+	font-size: 1rem;
+}
+body main ul li:hover img:first-child {
+	opacity: 0;
+}
+
+body main ul li:hover a::before {
+	opacity: 0;
+}
+
+/* body main ul li a::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: #0f0c29;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  animation: moveLtoR 5s linear  infinite alternate;
+} */
+
+@keyframes moveLtoR {
+	from {
+		left: 0;
+	}
+	to {
+		left: calc(100% - 2rem);
+	}
+}
+
+@media (max-width: 413px) {
+	body main {
+		padding: 1rem;
+	}
+
+	body main ul {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+	body main ul li a h3 {
+		font-size: 0.5rem;
+		right: 0.5rem;
+		top: 0.5rem;
+		transition: 0.5s;
+	}
+	body main ul li a img:first-child {
+		width: 1.5rem;
+	}
+}

@@ -1,0 +1,128 @@
+/* Start Variables */
+:root {
+	--main-color: #323234;
+	--second-color: #fea604;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/* End Global Rules */
+.parent div {
+	background-color: var(--main-color);
+}
+.parent {
+	width: fit-content;
+	background-color: #ddd;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 100px auto;
+	position: relative;
+	display: grid;
+	/* gap: 20px; */
+	grid-template-columns: repeat(9, 70px);
+	grid-template-rows: repeat(7, 70px);
+	grid-template-areas:
+		"one two two two . five . . ."
+		"one . . . . five . . ."
+		"one . . . . five . . ."
+		"one three three three . five . . ."
+		"one . . . . five . . ."
+		"one . . . . five . . ."
+		"one four four four . five six six six";
+}
+.spical-radius {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.one {
+	grid-area: one;
+	border-radius: 10px 0 0 10px;
+}
+.two {
+	grid-area: two;
+}
+.three {
+	grid-area: three;
+}
+.four {
+	grid-area: four;
+}
+.five {
+	grid-area: five;
+	border-radius: 10px 10px 0 10px;
+}
+.six {
+	grid-area: six;
+}
+.parent::after,
+.parent::before {
+	content: "";
+	height: 40px;
+	width: 40px;
+	background-color: var(--second-color);
+	position: absolute;
+}
+.parent::before {
+	opacity: 0;
+	right: 35px;
+	bottom: 35px;
+	animation: move-squre-right 2s linear;
+}
+@keyframes move-squre-right {
+	0% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+	25% {
+		transform: translate(-210px, 0px);
+		opacity: 1;
+	}
+	75% {
+		transform: translate(-210px, -420px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-210px, -420px);
+		opacity: 0;
+	}
+}
+.parent::after {
+	opacity: 1;
+	left: 245px;
+	top: 35px;
+	animation: move-squre-left 3s linear 2s;
+}
+@keyframes move-squre-left {
+	10% {
+		transform: translate(-210px, 0px);
+	}
+	20% {
+		transform: translate(-210px, 210px);
+	}
+	30% {
+		transform: translate(0px, 210px);
+	}
+	40% {
+		transform: translate(-210px, 210px);
+	}
+	50% {
+		transform: translate(-210px, 420px);
+	}
+	60% {
+		transform: translate(0px, 420px);
+	}
+	70% {
+		transform: translate(-210px, 420px);
+	}
+	90% {
+		transform: translate(-210px, 0px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}

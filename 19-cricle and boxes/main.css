@@ -1,0 +1,141 @@
+/* Start Variables */
+:root {
+	--yello-color: #ffeb00;
+	--gray-color: #515961;
+	/* --green-color: #10d876; */
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+body {
+	background-color: #333;
+}
+/* End Global Rules */
+/* Start Components  */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.flex-b {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* End Components  */
+/* Start repetition */
+/* End repetition */
+.parent {
+	margin: 100px 0;
+	background-image: url(https://images.unsplash.com/photo-1613018264526-88faa8dadbfc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 70vh;
+	position: relative;
+}
+.parent div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--yello-color);
+	color: var(--gray-color);
+	font-size: 70px;
+}
+.parent div:first-of-type {
+	background-color: var(--gray-color);
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	position: relative;
+	left: 70px;
+	z-index: 4;
+}
+.parent div:first-of-type::before,
+.parent div:first-of-type::after {
+	content: "RETINA READY";
+	padding: 20px 20px;
+	font-size: 20px;
+	width: fit-content;
+	background-color: var(--gray-color);
+	position: absolute;
+	bottom: 236px;
+	right: 204px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.parent div:first-of-type::after {
+	content: "RESPONSIVE TEMPLATE";
+	width: 240px;
+	bottom: 163px;
+	right: 112px;
+	padding: 25px 20px;
+	background-color: #fff;
+	color: var(--gray-color);
+}
+.parent div:nth-child(2) {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	z-index: 2;
+}
+.parent div:nth-child(3) {
+	background-color: var(--gray-color);
+	width: 220px;
+	height: 220px;
+	color: #fff;
+	position: relative;
+	right: 50px;
+	top: 30px;
+	z-index: 1;
+}
+.parent div:last-of-type {
+	width: 190px;
+	height: 190px;
+	position: relative;
+	right: 116px;
+	bottom: 61px;
+	z-index: 3;
+}
+.parent div:last-of-type::before,
+.parent div:last-of-type::after {
+	content: "EASY TO CUSOMEZE";
+	padding: 20px 20px;
+	font-size: 20px;
+	width: 205px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -43px;
+	right: -114px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.parent div:last-of-type::after {
+	content: "UNIQUE DESIGN";
+	width: 161px;
+	bottom: -114px;
+	right: -53px;
+	padding: 24px 40px;
+	background-color: var(--yello-color);
+	color: var(--gray-color);
+}
+/* Start thing */
+/* ENd thing */

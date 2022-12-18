@@ -1,0 +1,180 @@
+* {
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+body {
+	background-color: #ddd;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.parent {
+	background-color: #fff;
+	width: 80%;
+	border-radius: 7px;
+	overflow: hidden;
+}
+/* Start header  */
+header {
+	background-color: #2eca7f;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding: 10px 20px;
+}
+header .left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* flex-wrap: wrap; */
+}
+header .image {
+	background-image: url(https://lh3.googleusercontent.com/8_Lszxxn12lSQn0S_G6TkflYIz5fYftV7kH9K4xABXl8NlRJkBkkASp5QGrFVdt4Z-l5S9QHYkRHQV5AYnvWV_RFSl36OVkJz-3QrDTDWCmYLzsOekOskMhOdBMgg2qWsr1AhhTfbz2PtNTMOrfUGjozxRcsozVNLM4Twmxwr1UovtB8UlL1d-3fPHl7l57THzeN4Yja4Xpl6Ju-Su0wJ1JpH2mIgRPkV3nRP9i4aBhAxvtrSSKE0ipFM9QGKJx3DW9ragjmsE7SuNYRLyaC4U4G3FXt4XFVUUCwUT9P4dPidNFztLK34qzlfHS3g2di_JugVvrYL1jKrxhLd6vuJ7oNfONKcYMEOL50pjX_IiAW-cOkxAdk7lBEx6-TKciCsqQreqOhWqLp38OE71hzGn3BgoffoYNLMRGPGYdNYCEfLlnb6sS-DPp3RsAsJP9WR5fg8ADIgGZN3uTLqJNv0mWu3hBQaiTUA4nuvUeeNC0r1a_kOzVFnJ0eXBgHTXvyNXK7L5uZipDuqLf3yBbrpSl4J3NAcps5iqX-s5WtmKleeyPppiyHJxnaE8C3inFKPBG6VWNlZmOy7MyUntGzeLinNJzEX93KyanwHuLnuunFSZCn7e66CTRsAFiaaUJMugV98RTgsNcLObtY_8RmzPVPYWsbHpAZwmVglMeqo0QaZaa6sZRyqnzEtoOfMe6X5TgIkWRH9BehEkAlbQIdNf0=w863-h895-no?authuser=0);
+	background-size: cover;
+	background-position: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+header .left .text {
+	margin-left: 15px;
+}
+header .left .text h2 {
+	margin-bottom: -10px;
+}
+header .left .text p {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.right p {
+	margin-left: 8px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.right .icons {
+	display: flex;
+}
+.right i {
+	background-color: #fff;
+	color: #2eca7f;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 12px;
+	font-weight: bold;
+}
+
+/* End header  */
+section {
+	display: flex;
+	/* justify-content: space-between; */
+	/* align-items: center; */
+}
+section aside {
+	padding: 30px 30px;
+	color: #333;
+	flex-basis: 20%;
+	padding-right: 0;
+}
+section aside p {
+	margin-bottom: 50px;
+	position: relative;
+	transition: 0.7s;
+}
+section aside p i {
+	margin-right: 10px;
+}
+section aside p::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+	width: 12%;
+	height: 2px;
+	background-color: #2eca7f;
+	display: none;
+}
+section aside p:hover {
+	color: #2eca7f;
+	cursor: pointer;
+	transform: translatex(70px);
+}
+section aside p:hover::before {
+	display: block;
+}
+/* end aside */
+/* start info */
+section .image {
+	width: 40%;
+	margin-top: 30px;
+}
+section .image img {
+	width: 100%;
+}
+section .info {
+	width: 40%;
+	margin-top: 75px;
+	margin-left: 30px;
+}
+section .info h2 {
+	color: #333;
+	position: relative;
+	margin-bottom: 35px;
+}
+section .info h2:before {
+	content: "";
+	position: absolute;
+	bottom: -14px;
+	background-color: #2eca7f;
+	width: 12%;
+	height: 9px;
+	border-radius: 4px;
+}
+section .info h2::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 41px;
+	background-color: #2eca7f;
+	width: 17%;
+	height: 1px;
+	border-radius: 4px;
+}
+section .info p:first-of-type {
+	line-height: 1.8;
+	color: #777;
+}
+section .info span {
+	color: #777;
+}
+section .info div {
+	background-color: #2eca7f;
+	display: flex;
+	align-items: center;
+	width: 150px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 50px;
+	cursor: pointer;
+}
+section .info div p:last-of-type {
+	color: #fff;
+	margin: 0 0 0 5px;
+}
+section .info div i {
+	background-color: #fff;
+	color: #2eca7f;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* end info */

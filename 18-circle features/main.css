@@ -1,0 +1,240 @@
+/* Start Variables */
+:root {
+	--yello-color: #ffeb00;
+	--gray-color: #515961;
+	/* --green-color: #10d876; */
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+body {
+	background-color: #fff;
+}
+/* End Global Rules */
+/* Start Components  */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.flex-b {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-c {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* End Components  */
+/* Start repetition */
+
+/* End repetition */
+p {
+	text-align: center;
+	line-height: 1.5;
+	color: #898f9c;
+}
+/* Start header */
+header {
+	margin-bottom: 50px;
+	color: #242d3c;
+}
+header h1 {
+	font-weight: 900;
+}
+header h1 + p {
+	width: 600px;
+}
+@media (max-width: 900px) {
+	header h1 {
+		font-size: 25px;
+	}
+	header h1 + p {
+		font-size: 12px;
+		width: 400px;
+	}
+}
+/* Start header */
+/* Start big circle */
+.big-circle {
+	background-image: url(https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80);
+	background-position: center;
+	background-size: cover;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 1;
+}
+.big-circle::after {
+	content: "";
+	background-color: #242d3c;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	opacity: 0.7;
+	z-index: -2;
+}
+.big-circle h2 {
+	color: #fff;
+	text-align: center;
+	z-index: 3;
+}
+.big-circle p {
+	width: 60%;
+	margin-top: 30px;
+}
+@media (max-width: 900px) {
+	.big-circle {
+		width: 400px;
+		height: 400px;
+	}
+	.big-circle h2 {
+		font-size: 20px;
+	}
+	.big-circle p {
+		font-size: 10px;
+	}
+}
+/* End big circle
+
+/* Start Cicles */
+.circles div {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	border: 10px solid #fff;
+}
+.circles div img {
+	width: 50%;
+}
+.circles div:first-child {
+	background-color: #4cd5c1;
+	bottom: 10px;
+	right: 60px;
+}
+.circles div:nth-child(2) {
+	background-color: #80dcfe;
+	top: 10px;
+	right: 60px;
+}
+.circles div:nth-child(3) {
+	background-color: #ffd260;
+	bottom: 10px;
+	left: 60px;
+}
+.circles div:last-child {
+	background-color: #ff7058;
+	top: 10px;
+	left: 60px;
+}
+@media (max-width: 900px) {
+	.circles div {
+		width: 72px;
+		height: 72px;
+	}
+	.circles div:first-child {
+		right: 40px;
+	}
+	.circles div:nth-child(2) {
+		right: 40px;
+	}
+	.circles div:nth-child(3) {
+		left: 40px;
+	}
+	.circles div:last-child {
+		left: 40px;
+	}
+}
+/* Start Cicles */
+
+/* Start pragraph */
+.pragraph {
+	background-color: red;
+	position: absolute;
+}
+.pragraph p {
+	text-align: left;
+}
+.pragraph div:first-child p,
+.pragraph div:nth-child(2) p {
+	text-align: end;
+}
+.pragraph h3 {
+	color: #242d3c;
+	margin-bottom: 30px;
+}
+.pragraph div {
+	width: 300px;
+	position: absolute;
+}
+.pragraph div:first-child {
+	bottom: 458px;
+	right: -4px;
+	text-align: end;
+}
+.pragraph div:nth-child(2) {
+	bottom: 5px;
+	right: -4px;
+	text-align: end;
+}
+.pragraph div:nth-child(3) {
+	bottom: 458px;
+	left: 579px;
+	text-align: start;
+}
+.pragraph div:last-child {
+	bottom: -5px;
+	left: 597px;
+	text-align: start;
+}
+@media (max-width: 900px) {
+	.pragraph div {
+		font-size: 10px;
+		width: 140px;
+	}
+	.pragraph h3 {
+		margin-bottom: 10px;
+	}
+	.pragraph div:first-child {
+		bottom: 282px;
+		right: -12px;
+	}
+	.pragraph div:nth-child(2) {
+		bottom: -6px;
+		right: -23px;
+	}
+	.pragraph div:nth-child(3) {
+		bottom: 289px;
+		left: 380px;
+	}
+	.pragraph div:last-child {
+		bottom: -10px;
+		left: 369px;
+	}
+}
+/* Start pragraph */
+
+/* Start thing */
+/* Start thing */

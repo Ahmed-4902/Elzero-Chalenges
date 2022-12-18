@@ -1,0 +1,103 @@
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+body {
+	background-color: #fff;
+}
+/* End Global Rules */
+/* Start My Framework */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* End My Framework */
+
+.container {
+	width: 400px;
+	height: 600px;
+	background-color: #2196f3;
+}
+form {
+	height: 90%;
+	width: 85%;
+	background-color: #fff;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 30px;
+}
+form h2 {
+	margin: 30px calc(50% - 51px) 20px;
+}
+form div:not(div:last-of-type) {
+	width: 100%;
+	padding: 20px 30px;
+	border-bottom: 1px solid rgb(221, 220, 220);
+}
+form div input {
+	border: none;
+}
+
+form input:focus {
+	outline: none;
+}
+form label {
+	position: relative;
+}
+form label:before {
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	font-weight: 900;
+	color: #777474;
+	bottom: 2px;
+	left: -23px;
+}
+form label#name::before {
+	content: "\f007";
+}
+form label#email::before {
+	content: "\f2b6";
+}
+form label#pass::before {
+	content: "\f023";
+}
+input[type="submit"] {
+	background-color: #2196f3;
+	color: #fff;
+	width: 100%;
+	border-radius: 5px;
+	margin: 20px 0 10px;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+}
+.have {
+	border-bottom: 1px dashed rgb(221, 220, 220);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.have span {
+	color: #2196f3;
+	cursor: pointer;
+}
+p:last-of-type {
+	color: #515961;
+	font-weight: bold;
+}
+img {
+	width: 35px;
+	margin-top: 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,79 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	margin: 0;
+}
+.page {
+	width: 100%;
+	background-color: #eee;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	padding: 50px;
+	line-height: 30px;
+	grid-template-areas:
+		"osama osama ahmed shady"
+		"mohamed mahmoud mahmoud shady"
+		"mohamed ezz ezz shady"
+		"sayed ibrahim gamal eman";
+}
+.osama {
+	grid-area: osama;
+}
+.ahmed {
+	grid-area: ahmed;
+}
+.shady {
+	grid-area: shady;
+}
+.mohamed {
+	grid-area: mohamed;
+}
+.mahmoud {
+	grid-area: mahmoud;
+}
+.ezz {
+	grid-area: ezz;
+}
+.sayed {
+	grid-area: sayed;
+}
+.ibrahim {
+	grid-area: ibrahim;
+}
+.gamal {
+	grid-area: gamal;
+}
+.eman {
+	grid-area: eman;
+}
+
+.page div {
+	padding: 20px;
+	border-bottom: 3px solid #f44336;
+	position: relative;
+}
+.page div:not(.sp) {
+	background-color: #fff;
+	color: #000;
+}
+.sp {
+	background-color: #000;
+	color: #fff;
+}
+.page .job {
+	color: #aaa4a4;
+	margin-bottom: 10px;
+}
+.page .ward {
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+.page div i {
+	position: absolute;
+	bottom: 8px;
+	right: 7px;
+}

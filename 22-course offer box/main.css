@@ -1,0 +1,161 @@
+/* Start Variables */
+:root {
+	--background-color: #51509b;
+	--icon-color: #e5af40;
+	--price-color: #4a5568;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	/* margin: 0; */
+}
+/* End Global Rules */
+/* start comanns */
+.heading {
+	margin-top: 10px;
+	color: #2e3542;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+.heading::before {
+	content: "";
+	background-color: #ffeabe;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 2px;
+	z-index: -1;
+}
+.card .container > i {
+	color: var(--icon-color);
+	font-size: 25px;
+	margin-right: 10px;
+}
+.price {
+	display: flex;
+	justify-content: space-between;
+}
+.price div:first-child {
+	color: var(--price-color);
+	font-size: 40px;
+	font-weight: 550;
+}
+.price div:first-child sup {
+	font-size: 20px;
+	top: -20px;
+}
+.card .container .price div:first-child span {
+	font-size: 12px;
+}
+.price div:last-child {
+	background-color: var(--icon-color);
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.card .container p {
+	color: #444e60;
+	font-size: 13px;
+}
+.card .container .content hr {
+	opacity: 0.3;
+}
+/* End comanns */
+/* Start Parent */
+.parent {
+	background-color: var(--background-color);
+	width: 80%;
+	height: calc(100vh - 100px);
+	margin: 25px auto;
+	border-radius: 10px;
+	padding: 50px 100px;
+}
+.parent header h1 {
+	display: inline-block;
+	color: #fff;
+}
+.parent header i {
+	color: var(--icon-color);
+	font-size: 30px;
+}
+.parent header p {
+	color: #fff;
+}
+/* End Parent */
+/* Start package */
+.package {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: fit-content;
+}
+/* End package */
+/* Start premium */
+.premium {
+	background-color: #fff;
+	height: 100%;
+	width: fit-content;
+	border-radius: 10px;
+}
+.premium .container .price {
+	margin: 25px 0 25px;
+}
+.premium .container .price div:last-child {
+	margin-right: 30px;
+}
+.premium .container {
+	padding: 25px 60px 50px;
+}
+/* Start premium */
+/* Start Essentials */
+.esse {
+	height: 300px;
+	width: 500px;
+	border-radius: 0 10px 10px 0;
+	background-image: linear-gradient(
+		to right,
+		#ededed 2%,
+		#f0f0f0 2%,
+		#f0f0f0 4%,
+		#f2f2f2 4%,
+		#f2f2f2 6%,
+		#f4f4f4 6%,
+		#f4f4f4 8%,
+		#f6f6f6 8%,
+		#f6f6f6 10%,
+		#f8f8f8 10%,
+		#f8f8f8 11%,
+		#f9f9f9 11%,
+		#f9f9f9 12%,
+		#fafafa 12%,
+		#fafafa 13%,
+		#fbfbfb 13%,
+		#fbfbfb 14%,
+		#fcfcfc 14%,
+		#fcfcfc 15%,
+		#fdfdfd 15%,
+		#fdfdfd 16%,
+		#fefefe 16%,
+		#fefefe 17%,
+		#fff 17%,
+		#fff 100%
+	);
+}
+.esse .container {
+	padding: 25px 30px 50px;
+}
+.esse .price {
+	margin-top: 40px;
+}
+/* End Essentials */
