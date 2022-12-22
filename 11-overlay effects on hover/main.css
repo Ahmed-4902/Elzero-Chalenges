@@ -3,10 +3,8 @@
 }
 /* Start Global Rules */
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 	text-transform: capitalize;
@@ -28,6 +26,7 @@ body {
 	height: 400px;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 .image::before {
 	content: "";

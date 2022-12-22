@@ -13,6 +13,7 @@
 }
 body {
 	background-color: #fff;
+	height: 100vh;
 }
 @media (min-width: 768px) {
 	.container {
@@ -47,7 +48,7 @@ p {
 	color: #919191;
 }
 /* End Global Rules */
-footer {
+.footer {
 	background-color: #333333;
 }
 .container {
@@ -115,7 +116,7 @@ footer {
 }
 /* End Newsletter */
 
-/* Start end footer  */
+/* Start end .footer  */
 .end-footer {
 	background-color: #2b2b2b;
 }
@@ -130,7 +131,7 @@ footer {
 	width: 50px;
 	margin-right: 5px;
 }
-/* End end footer  */
+/* End end .footer  */
 @media (max-width: 767px) {
 	.container {
 		padding: 20px 20px 20px 50px;

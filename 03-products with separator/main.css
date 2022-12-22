@@ -1,32 +1,15 @@
 /* Start Global Rules */
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 	text-transform: capitalize;
-	font-family: "Open Sans", sans-serif;
 	list-style: none;
 }
 body {
-	/* background-image: url(https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
-  background-size: cover;
-  background-position: center;
-  position: relative; */
-	/* background-color: #ddd; */
 	height: 100vh;
 }
-/* body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00000099;
-} */
 /* End Global Rules */
 .parent {
 	background-color: #20bfa9;
@@ -34,6 +17,10 @@ body {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
 }
 .parent::before {
 	content: "";
@@ -63,6 +50,10 @@ body {
 	background-image: linear-gradient(to bottom, #282828 30%, #fff 30%);
 	border-radius: 10px;
 	height: 330px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
 }
 .parent .one {
 	position: relative;
@@ -119,73 +110,3 @@ body {
 		top: 50%;
 	}
 }
-/* Start Flex  */
-.f {
-	display: flex;
-}
-.fd-rr {
-	flex-direction: row-reverse;
-}
-.fd-c {
-	flex-direction: column;
-}
-.fd-cr {
-	flex-direction: column-reverse;
-}
-.jc-c {
-	justify-content: center;
-}
-.jc-fs {
-	justify-content: flex-start;
-}
-.jc-fe {
-	justify-content: flex-end;
-}
-.jc-sb {
-	justify-content: space-between;
-}
-.jc-sa {
-	justify-content: space-around;
-}
-.jc-se {
-	justify-content: space-evenly;
-}
-.ai-c {
-	align-items: center;
-}
-.ai-fs {
-	align-items: flex-start;
-}
-.ai-fe {
-	align-items: flex-end;
-}
-
-.fw-w {
-	flex-wrap: wrap;
-}
-/* End Flex  */
-
-/* ----------------------------------------------------------- */
-/* Start Position  */
-.p-c {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.pr-c {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.p-y-c {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.p-x-c {
-	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
-}
-/* End Position  */
