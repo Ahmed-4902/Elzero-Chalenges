@@ -1,0 +1,11 @@
+div {
+	background-color: #787878;
+	width: 200px;
+	height: 200px;
+	box-shadow: 103px -100px #7cbb00, -103px -100px #f65314, 103px 106px #ffbb00,
+		-103px 106px #00a1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

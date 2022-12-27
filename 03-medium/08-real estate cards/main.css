@@ -1,0 +1,244 @@
+:root {
+	--color-blue: #0d40c6;
+}
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+body {
+	background-image: url(https://images.unsplash.com/photo-1512699355324-f07e3106dae5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80);
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000099;
+}
+/* Start Flex  */
+.f {
+	display: flex;
+}
+.fd-rv {
+	flex-direction: row-reverse;
+}
+.fd-c {
+	flex-direction: column;
+}
+.fd-cv {
+	flex-direction: column-reverse;
+}
+.jc-c {
+	justify-content: center;
+}
+.jc-fs {
+	justify-content: flex-start;
+}
+.jc-fe {
+	justify-content: flex-end;
+}
+.jc-sb {
+	justify-content: space-between;
+}
+.jc-sa {
+	justify-content: space-around;
+}
+.jc-se {
+	justify-content: space-evenly;
+}
+.ai-c {
+	align-items: center;
+}
+.ai-fs {
+	align-items: flex-start;
+}
+.ai-fe {
+	align-items: flex-end;
+}
+
+.fw-w {
+	flex-wrap: wrap;
+}
+/* End Flex  */
+
+/* ----------------------------------------------------------- */
+/* Start Position  */
+.p-c {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.p-y-c {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.p-x-c {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+/* End Position  */
+
+/* End Global Rules */
+.container {
+	background-color: #f7f7f750;
+	padding: 30px 20px;
+	width: 95%;
+}
+.card {
+	width: calc(95% / 3);
+	background-color: #fff;
+}
+.card .image {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+.card .image i {
+	color: #fff;
+	position: absolute;
+}
+.card .image i.arrow-right {
+	bottom: 30px;
+	right: 25px;
+}
+.card .image i.arrow-left {
+	bottom: 20px;
+	right: 20px;
+}
+.card .image i.heart {
+	bottom: 25px;
+	right: 48px;
+}
+.card .image span.hot {
+	color: #fff;
+	background-color: #dd3333;
+	padding: 5px 10px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.card:first-child .image span:last-of-type {
+	color: #fff;
+	background-color: #ea723d;
+	height: 30px;
+	padding: 5px 12px;
+	position: absolute;
+	top: -15px;
+	left: 0px;
+}
+.card:first-child .image span:last-of-type:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 10px solid #ea723d;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	top: 0px;
+	left: 88px;
+}
+.card .image::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #3db0ac95;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.card:hover .image::before {
+	display: block;
+}
+.card .image a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 20px 15px;
+	display: none;
+}
+.card:hover .image a {
+	display: block;
+}
+.card .info {
+	padding: 25px 40px 25px 20px;
+}
+.card h2 {
+	font-size: 20px;
+}
+.card .info > p {
+	font-size: 14px;
+	color: #777;
+	margin: 20px 0;
+}
+.rooms div {
+	margin-right: 25px;
+}
+.rooms div:last-child {
+	margin: 0;
+}
+.rooms p {
+	margin-bottom: 20px;
+}
+.rooms i {
+	margin-right: 10px;
+	font-size: 20px;
+	color: #777;
+}
+.rooms span {
+	color: #777;
+}
+.cost {
+	margin-top: 25px;
+}
+.cost p {
+	font-weight: 500px;
+}
+.cost span {
+	color: #3db0ac;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 10px;
+}
+@media (max-width: 767px) {
+	.container {
+		flex-direction: column;
+		margin-top: 520px;
+	}
+	.card {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.card .info {
+		padding: 25px 20px 25px 20px;
+	}
+	.rooms div {
+		margin-right: 15px;
+	}
+	.rooms div:last-child {
+		margin: 0;
+	}
+	.rooms i {
+		margin-right: 5px;
+		font-size: 15px;
+		color: #777;
+	}
+}

@@ -1,0 +1,711 @@
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+	font-family: "Open Sans", sans-serif;
+	list-style: none;
+}
+body {
+	height: 100vh;
+}
+/* End Global Rules */
+/* Start Wallper  */
+.wallper {
+	background-color: #ed686b;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.wallper .layer2 {
+	background-color: #ff7578;
+	width: 1200px;
+	height: 1200px;
+	border-radius: 50%;
+}
+.wallper .layer3 {
+	background-color: #fe8282;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+}
+.wallper .layer4 {
+	background-color: #ff999a;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+}
+/* End Wallper  */
+
+/* Start Basis  */
+.container {
+	width: 1200px;
+	height: 1200px;
+	/* border: 1px solid #000; */
+	z-index: 2;
+}
+/* End Basis  */
+
+/* Start front-car  */
+.front-car {
+	width: 90%;
+	height: 379px;
+	border-bottom: 30px solid rgb(132, 31, 31);
+	background-image: linear-gradient(
+		rgb(221, 56, 56) 49%,
+		rgb(198, 48, 45) 49%,
+		rgb(198, 48, 45) 74%,
+		rgb(236, 64, 66) 65%
+	);
+	transform: translate(5%, 180%);
+	border-radius: 200px;
+	position: relative;
+	box-shadow: 0px 0px 0px 10px #232324;
+	overflow: hidden;
+	z-index: 2;
+	top: -149px;
+}
+/* ----- Start color --------------------- */
+.waves {
+	background-color: #ec5658;
+	width: 224px;
+	height: 107px;
+	position: absolute;
+	right: 24px;
+	top: -10px;
+	transform: rotate(-24deg);
+	border-radius: 0 0 0 50px;
+}
+.waves2 {
+	background-color: #ec5658;
+	width: 224px;
+	height: 107px;
+	position: absolute;
+	left: 24px;
+	top: -10px;
+	transform: rotate(24deg);
+}
+.waves3 {
+	background-color: #ec5658;
+	width: 100%;
+	height: 107px;
+	position: absolute;
+	top: 23px;
+}
+.waves4 {
+	position: absolute;
+	transform: translateY(-143px) scale(1.1, 2);
+}
+.waves5 {
+	background-color: #ed3f41;
+	/* background-color: #000; */
+	width: 312px;
+	height: 90px;
+	position: absolute;
+	right: -46px;
+	top: 91px;
+	transform: rotate(-11deg);
+	border-radius: 0 0px 0px 50px;
+}
+.waves6 {
+	background-color: #ed3f41;
+	width: 312px;
+	height: 90px;
+	position: absolute;
+	left: -46px;
+	top: 91px;
+	transform: rotate(11deg);
+	border-radius: 0 0px 50px 0;
+}
+.front-car .shadow {
+	position: absolute;
+	width: 68%;
+	height: 108%;
+	background-color: transparent;
+	margin-left: 15px;
+	margin-top: -12px;
+	border-radius: 200px;
+	box-shadow: -20px 0px 0 0px #fff;
+}
+/* ----- End color --------------------- */
+/* Start Kapout  */
+.kapout {
+	width: 737px;
+	height: 34%;
+	position: relative;
+	transform: translate(170px, -8%);
+}
+.kapout::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 105px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 80px solid #000;
+	/* box-shadow: 20px -3px 0 11px #000; */
+	transform: rotate(-14deg) translate(27px, -4px);
+	z-index: 10;
+}
+.kapout::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 80px solid #000;
+	transform: rotate(14deg) translate(4px, -4px);
+	right: 20px;
+	z-index: 6;
+}
+.kapout .left {
+	width: 56%;
+	height: 100%;
+	transform: skewY(15deg) rotate(-15deg);
+	border-radius: 0 0 0 50px;
+	position: absolute;
+	left: 3%;
+	box-shadow: -1px 4px rgb(226, 226, 226);
+}
+.kapout .right {
+	width: 53%;
+	height: 100%;
+	transform: skewY(-15deg) rotate(15deg);
+	border-radius: 0 0 50px;
+	position: absolute;
+	right: 3%;
+	box-shadow: 1px 4px rgb(226, 226, 226);
+}
+.fake3 {
+	position: absolute;
+	width: 550px;
+	height: 4px;
+	background-color: rgb(226, 226, 226);
+	bottom: -7px;
+	left: 100px;
+	border-radius: 100px;
+}
+/* End Kapout  */
+/* Start lights */
+.light {
+	position: absolute;
+	width: 200px;
+	height: 170px;
+}
+.light.left {
+	top: 47px;
+	left: 32px;
+}
+.light.right {
+	top: 47px;
+	right: -2px;
+}
+.light .layer-one {
+	border: 8px solid #000;
+	background-color: #b83032;
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	box-shadow: 80px 38px #bc3331;
+}
+.light.left .layer-one {
+	box-shadow: -10px 9px #bc3331, -17px 36px #bc3331, -17px 53px #bc3331;
+}
+.light .layer-two {
+	border: 16px solid #000;
+	transform: translateY(-5px);
+	background-color: #fff;
+	width: 146px;
+	height: 140px;
+	border-radius: 50%;
+	box-shadow: inset 0px 15px 3px 0px rgb(184 184 184);
+}
+/* End lights */
+
+/* Start lamp */
+.lamp {
+	position: absolute;
+	bottom: 15px;
+	width: 400px;
+	height: 100px;
+	background-color: #e6e6e6;
+	border-radius: 10px 110px 10px 156px / 10px 100px 10px 131px;
+	overflow: hidden;
+}
+.lamp.left {
+	left: 49px;
+	box-shadow: inset 1px -15px 0 0 #b8b8b8, 0 0 0 7px #000,
+		12px 11px 8px 0px #3e2020;
+}
+.lamp.right {
+	right: 46px;
+	border-radius: 110px 10px 156px 10px / 100px 10px 131px 10px;
+	box-shadow: inset 1px -15px 0 0 #b8b8b8, 0 0 0 7px #000,
+		-12px 11px 8px 0px #3e2020;
+}
+.lamp .inside {
+	background-color: #363231;
+	width: 93%;
+	height: 40%;
+	margin-top: 8%;
+	border-radius: 0 90px 0 0 / 0 60px 0 0;
+	box-shadow: 0px 0px 0 5px #000, inset 8px 16px 0 0 #222021;
+}
+.lamp.right .inside {
+	border-radius: 90px 0 0 0 / 60px 0px 0 0;
+}
+.lamp .inside div {
+	transform: translateY(1px);
+	width: 40%;
+	height: 90%;
+	background-color: #eb8e43;
+	border-radius: 0 30px 0 0 / 0 30px 0 0;
+	box-shadow: 0px 0px 0 5px #000, inset 8px 16px 0 0 #794e2b;
+}
+.lamp.right .inside div {
+	border-radius: 30px 0px 0 0 / 30px 0px 0 0;
+}
+/* End lamp */
+
+/* Start shape center  */
+.shape-center {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	top: 401px;
+	left: 531px;
+}
+.shape-center .main {
+	position: absolute;
+	z-index: 4;
+	background-color: #343232;
+	width: 120px;
+	height: 143px;
+	border-radius: 30px 30px 100px 100px / 30px 30px 160px 160px;
+	border: 10px solid #ebe7e8;
+	box-shadow: 0px 12px 5px 5px rgb(0 0 0 / 60%);
+}
+.shape-center::before {
+	content: "";
+	position: absolute;
+	z-index: 3;
+	top: -23px;
+	left: 26px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #343232;
+	transform: rotate(-45deg);
+	border: 15px solid;
+	border-color: #ebe7e8 #ebe7e8 transparent transparent;
+	box-shadow: 1px 1px 8px 2px rgb(0 0 0 / 50%);
+}
+.shape-center .main div:first-child {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #e4e7e3;
+	position: absolute;
+	z-index: 6;
+	left: 51%;
+	top: -9px;
+	transform: translateX(-50%);
+	box-shadow: 0px 1px 0 1px rgb(255 255 255 / 20%), 0px 0px 0 13px #343232;
+}
+.shape-center .main div:first-child ~ div {
+	z-index: 10;
+	width: 100%;
+	height: 8px;
+	background-color: #e8e3e5;
+}
+.shape-center .main div:nth-child(2) {
+	position: absolute;
+	transform: translateY(30px);
+}
+.shape-center .main div:nth-child(3) {
+	transform: translateY(55px);
+}
+.shape-center .main div:nth-child(4) {
+	transform: translateY(70px);
+}
+.shape-center .main div:nth-child(5) {
+	transform: translate(10px, 85px);
+}
+/* End shape center  */
+/* End front-car  */
+
+/* Start Accessories */
+.bottom-car {
+	position: relative;
+	top: 518px;
+	left: 49%;
+	transform: translateX(-50%);
+	width: 58%;
+	height: 50px;
+	background-color: #222021;
+	z-index: 1;
+	border-radius: 40px;
+}
+.container > .mirror {
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	border: 13px solid #2b272b;
+	background-color: #fff;
+	position: relative;
+	left: 83%;
+	top: 5%;
+	transform: rotatey(328deg);
+	box-shadow: inset -9px 7px #f8f8f8;
+}
+.radio {
+	position: relative;
+	left: 15%;
+	bottom: 31%;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 393px solid #fff;
+	transform: skew(-9deg);
+}
+.radio::before {
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 20px;
+	height: 36px;
+	top: 373px;
+	left: -10px;
+}
+/* End Accessories */
+
+/* Start Driving */
+/* Start Frame  */
+.frames {
+	position: relative;
+	height: 400px;
+	width: 80%;
+	top: -54%;
+	left: 168px;
+	overflow: hidden;
+	z-index: 1;
+	/* border: 1px solid red; */
+}
+.frame.left,
+.frame.right {
+	position: relative;
+	width: 310px;
+	height: 300px;
+	border: 40px solid #232324;
+	border-bottom: none;
+	top: 1px;
+	z-index: 4;
+}
+.frame.left::before,
+.frame.right::before {
+	content: "";
+	position: absolute;
+	width: 105%;
+	height: 100%;
+	border: 5px solid #fff;
+	border-bottom: none;
+}
+.frame.left {
+	border-right: none;
+	left: 70px;
+	border-radius: 64px 0 0 0;
+	transform: SkewX(-20deg) skewY(-2deg);
+}
+.frame.left::before {
+	border-right: none;
+	border-radius: 46px 0 0 0;
+	top: -19.6px;
+	left: -19px;
+}
+/* ------------- */
+.frame.right {
+	border-left: none;
+	right: -154px;
+	border-radius: 0 64px 0 0;
+	transform: SkewX(20deg) skewY(2deg);
+}
+.frame.right::before {
+	border-left: none;
+	border-radius: 0 46px 0 0;
+	top: -19px;
+	right: -19px;
+}
+/* End Frame  */
+
+/* Start Chairs & wheel & mirror */
+.frames .chair {
+	position: absolute;
+	background-color: #232324;
+	top: 211px;
+	left: 100px;
+	width: 252px;
+	height: 75px;
+	border-radius: 45px 45px 0 0;
+	z-index: 2;
+}
+.frames .chair.two {
+	left: 485px;
+}
+.wheel {
+	position: absolute;
+	background-color: transparent;
+	width: 216px;
+	height: 200px;
+	border-radius: 50%;
+	border: 10px solid #232324;
+	top: 170px;
+	right: 237px;
+	z-index: 1;
+}
+.frames .mirror {
+	width: 322px;
+	height: 174px;
+	position: absolute;
+	left: 48%;
+	transform: translate(-60%);
+}
+.frames .mirror .stand {
+	width: 10px;
+	height: 35px;
+	background-color: #232324;
+	position: absolute;
+	top: 30px;
+	left: 140px;
+}
+.frames .mirror .stand::before {
+	position: absolute;
+	left: 10px;
+	top: 29px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid #232324;
+	border-right: 5px solid transparent;
+}
+.frames .mirror .stand::after {
+	position: absolute;
+	left: -4px;
+	top: 29px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid #232324;
+	border-left: 5px solid transparent;
+}
+.frames .mirror .shape {
+	width: 114px;
+	height: 44px;
+	position: absolute;
+	left: 96px;
+	top: 60px;
+}
+.frames .mirror .shape::before {
+	content: "";
+	z-index: 5;
+	position: absolute;
+	background-color: #ff999a;
+	width: 204px;
+	height: 60px;
+	border-radius: 50%;
+	top: 38px;
+	left: -52px;
+}
+.frames .mirror .shape .left {
+	width: 50%;
+	height: 100%;
+	background-color: #232324;
+	transform: skew(-2deg) rotatex(30deg);
+	border-radius: 10px 0 0 10px;
+	margin-left: -5px;
+	position: absolute;
+	left: 0px;
+}
+.frames .mirror .shape .right {
+	width: 50%;
+	height: 100%;
+	background-color: #232324;
+	transform: skew(2deg) rotatex(30deg);
+	border-radius: 0 10px 10px 0;
+	position: absolute;
+	left: 48px;
+}
+.frames .mirror .shape .right::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #232324;
+	left: -23px;
+	transform: rotatex(30deg);
+}
+.reflection img {
+	position: absolute;
+	z-index: 2;
+	left: 267px;
+	opacity: 0.4;
+	clip-path: inset(6% 0 0 0);
+}
+.reflection::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 108px solid #fe8282;
+	border-left: 100px solid transparent;
+	top: 29px;
+	right: 185px;
+	opacity: 1;
+	z-index: 3;
+	transform: rotate(1deg);
+}
+.reflection2 img {
+	position: absolute;
+	z-index: 2;
+	left: 94px;
+	opacity: 0.4;
+	clip-path: inset(6% 0 0 0);
+	transform: rotatex(180deg) skew(30deg);
+}
+/* End Chairs */
+
+/* End Driving */
+
+/* Start Tires & ground  */
+.tires {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: -499px;
+	z-index: 1;
+}
+.tires .tire {
+	background-color: #363231;
+	position: absolute;
+	overflow: hidden;
+	width: 120px;
+	height: 193px;
+	border-radius: 0 0 30px 30px;
+	box-shadow: 0 0 0 15px #2b272b, inset 0px -30px #4d4747;
+	z-index: 2;
+}
+.tires .tire div {
+	background-color: #2b272b;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	top: -84px;
+}
+.tires .tire.left {
+	left: 95px;
+}
+.tires .tire.right {
+	right: 116px;
+}
+.tires .tire.right div {
+	right: -4px;
+	top: -79px;
+}
+.tires .ground {
+	background-color: #222120;
+	width: 98%;
+	height: 65px;
+	position: absolute;
+	bottom: 160px;
+	left: 6px;
+	border-radius: 50%;
+	z-index: 1;
+	transform: rotatex(24deg);
+}
+.tires .shadow {
+	position: absolute;
+	background-color: green;
+	width: 90%;
+	height: 50px;
+	z-index: 2;
+	left: 50px;
+}
+/* End Tires & ground  */
+/* Start Flex  */
+.f {
+	display: flex;
+}
+.fd-rr {
+	flex-direction: row-reverse;
+}
+.fd-c {
+	flex-direction: column;
+}
+.fd-cr {
+	flex-direction: column-reverse;
+}
+.jc-c {
+	justify-content: center;
+}
+.jc-fs {
+	justify-content: flex-start;
+}
+.jc-fe {
+	justify-content: flex-end;
+}
+.jc-sb {
+	justify-content: space-between;
+}
+.jc-sa {
+	justify-content: space-around;
+}
+.jc-se {
+	justify-content: space-evenly;
+}
+.ai-c {
+	align-items: center;
+}
+.ai-fs {
+	align-items: flex-start;
+}
+.ai-fe {
+	align-items: flex-end;
+}
+
+.fw-w {
+	flex-wrap: wrap;
+}
+/* End Flex  */
+
+/* ----------------------------------------------------------- */
+/* Start Position  */
+.p-c {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.pr-c {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.p-y-c {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.p-x-c {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+/* End Position  */

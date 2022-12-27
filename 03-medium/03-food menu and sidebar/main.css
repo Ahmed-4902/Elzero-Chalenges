@@ -1,0 +1,449 @@
+:root {
+	--color-blue: #0d40c6;
+}
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+.p-x-c {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+body {
+	background-image: url(https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+	background-size: cover;
+	position: relative;
+	height: fit-content;
+}
+body::before {
+	content: "";
+	position: absolute;
+	background-color: #00000099;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+h2 {
+	font-family: "Birthstone", cursive;
+	font-size: 50px;
+	letter-spacing: 5px;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+/* End Global Rules */
+
+.container {
+	position: relative;
+	/* top: 40px;
+  bottom: 40px; */
+}
+
+/* Start Sction  */
+section {
+	width: 69%;
+	transition: 0.3s;
+}
+section .meal {
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
+	margin: 20px 0;
+	box-shadow: 0px 8px 0px 0px #e2e2e210;
+}
+section .meal .image {
+	background-size: cover;
+	background-position: center;
+	width: 45%;
+}
+section .meal .info {
+	padding: 30px 20px 40px;
+	background-color: #f9f9f9;
+}
+section .meal h2 {
+	margin-bottom: 20px;
+	color: #414141;
+}
+section .meal h2 + p i {
+	color: red;
+	margin-right: 5px;
+}
+section .meal .info p:last-of-type {
+	color: rgb(112, 110, 110);
+	margin: 15px 0;
+	line-height: 1.8;
+}
+section .info a {
+	color: red;
+	text-decoration: none;
+}
+@media (max-width: 767px) {
+	section {
+		width: 100%;
+	}
+	section .meal {
+		flex-direction: column;
+		text-align: center;
+		margin: 40px 5px;
+		height: 600px;
+		border-radius: 15px 15px 0 0;
+	}
+	section .meal .image {
+		width: 100%;
+		height: 50%;
+	}
+}
+/* ------------------------------------------- */
+.num {
+	width: 100%;
+	text-align: center;
+	color: rgb(92, 92, 92);
+	font-size: 30px;
+}
+.num span {
+	border: 1px solid rgb(92, 92, 92);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: 20px 4px;
+}
+.num span:hover,
+.num span:nth-child(2) {
+	background-color: red;
+	color: #fff;
+	cursor: pointer;
+}
+/* End Sction  */
+
+/* Start Side Bar  */
+aside {
+	width: 29%;
+	padding: 20px;
+	margin: 20px 0;
+	height: 1783px;
+	transition: 0.3s;
+}
+aside > div {
+	margin-bottom: 30px;
+}
+/* -------------------------- */
+aside input:focus {
+	outline: none;
+}
+aside input[type="serch"] {
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+	padding-left: 20px;
+	border: 2px solid rgb(184, 184, 184);
+	margin-bottom: 40px;
+}
+aside form {
+	position: relative;
+}
+aside form i {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	z-index: 2;
+	font-size: 20px;
+}
+/* ------------------------------ */
+aside h2 {
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgb(206, 206, 206);
+	padding-bottom: 15px;
+	color: rgb(255, 255, 255);
+}
+aside .cate div {
+	color: rgb(175, 175, 175);
+	margin-bottom: 15px;
+}
+aside .cate div i {
+	margin-right: 5px;
+}
+/* ------------------------------- */
+.posts .post:not(:last-child) {
+	border-bottom: 1px solid rgb(219, 219, 219);
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.posts .image {
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 80px;
+	border-radius: 12px;
+}
+.posts .info {
+	width: 65%;
+	padding-left: 10px;
+	color: rgb(46, 46, 46);
+}
+.posts .info h3 {
+	font-size: 15px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.posts p {
+	color: #fff;
+}
+.posts .info i {
+	color: red;
+}
+/* ---------------------------------------- */
+.offer .image {
+	background-image: url(https://images.unsplash.com/photo-1598449426314-8b02525e8733?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+.offer .image::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgb(44 45 57 / 93%);
+	position: absolute;
+}
+.offer .info {
+	position: relative;
+	padding: 30px 0 30px 20px;
+	color: #fff;
+}
+.offer h2 {
+	border: none;
+	color: #fff;
+	font-size: 50px;
+	line-height: 1.4;
+	margin: 0;
+}
+.offer h2 span {
+	color: #e8272e;
+	letter-spacing: 3px;
+}
+.offer input {
+	background-color: #e8272e;
+	color: #fff;
+	border: none;
+	border-radius: 40px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	box-shadow: 0px 4px 0px 0px #ac161b;
+}
+/* ----------------------------- */
+.insta .photos .image {
+	background-size: cover;
+	background-position: center;
+}
+.insta .photos .image {
+	width: calc(93% / 3);
+	margin-bottom: 10px;
+	border-radius: 14px;
+	height: 92px;
+}
+/* ------------------------------ */
+.tags .info p {
+	background-color: #f4f4f4;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	padding: 15px 18px;
+	border-radius: 30px;
+}
+@media (max-width: 767px) {
+	aside {
+		display: none;
+		width: 90%;
+	}
+	aside .offer {
+		text-align: center;
+	}
+	aside .offer .image::before {
+		width: 100%;
+		left: 0;
+	}
+}
+/* End Side Bar  */
+
+/* Start footer  */
+footer {
+	background-color: #e8272e;
+	color: #fff;
+	padding: 30px 20px;
+	border-radius: 10px;
+	margin: 100px 0 40px;
+	align-self: flex-end;
+	width: 100%;
+}
+footer .info {
+	width: 40%;
+}
+footer h2 {
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+footer p {
+	line-height: 1.6;
+}
+footer form {
+	width: 50%;
+}
+footer form input[type="email"]:focus {
+	outline: none;
+}
+footer form input[type="email"]::placeholder {
+	color: #fff;
+}
+footer form input[type="email"] {
+	background-color: #ea3d43;
+	caret-color: #fff;
+	padding: 20px 30px;
+	width: 100%;
+	height: 60px;
+	border-radius: 40px;
+	border: none;
+	border: 1px solid rgb(256 256 256 / 40%);
+	position: relative;
+}
+footer form input[type="submit"] {
+	background-color: #fff;
+	color: red;
+	border: none;
+	border-radius: 40px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	box-shadow: 0px 4px 0px 0px #cacaca;
+	position: absolute;
+	right: 30px;
+	bottom: 100px;
+}
+@media (max-width: 767px) {
+	footer {
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	footer .info {
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	footer form {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	footer form input[type="email"] {
+		height: 50px;
+	}
+	footer form input[type="submit"] {
+		width: 25%;
+		bottom: 100px;
+		padding: 10px 0px;
+		font-size: 13px;
+	}
+}
+/* End footer  */
+
+/* ==================================== */
+.container > .i {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	background: #eab543;
+	top: 120px;
+	right: 5px;
+	font-size: 30px;
+	color: #fff;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	position: fixed;
+}
+@media (max-width: 767px) {
+	.container > .i {
+		position: fixed;
+		display: flex;
+		/* animation: move 2s linear infinite; */
+	}
+	.container > .i:hover {
+		animation-play-state: paused;
+	}
+	@keyframes move {
+		50% {
+			right: 30px;
+		}
+		100% {
+			right: 0px;
+		}
+	}
+	.container > .i:hover + section {
+		transform: translateX(-80%);
+		width: 10%;
+	}
+	.container > .i:hover + section + aside {
+		display: block;
+		/* transform: translateX(-100%); */
+	}
+}
+/* =============================================== */
+/* Start Flex  */
+.f {
+	display: flex;
+}
+.fd-rv {
+	flex-direction: row-reverse;
+}
+.fd-c {
+	flex-direction: column;
+}
+.fd-cv {
+	flex-direction: column-reverse;
+}
+.jc-c {
+	justify-content: center;
+}
+.jc-fs {
+	justify-content: flex-start;
+}
+.jc-fe {
+	justify-content: flex-end;
+}
+.jc-sb {
+	justify-content: space-between;
+}
+.jc-sa {
+	justify-content: space-around;
+}
+.jc-se {
+	justify-content: space-evenly;
+}
+.ai-c {
+	align-items: center;
+}
+.ai-fs {
+	align-items: flex-start;
+}
+.ai-fe {
+	align-items: flex-end;
+}
+
+.fw-w {
+	flex-wrap: wrap;
+}
+/* End Flex  */

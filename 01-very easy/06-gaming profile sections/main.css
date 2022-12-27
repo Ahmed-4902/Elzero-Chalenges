@@ -1,0 +1,219 @@
+/* Start Variables */
+:root {
+	--main-color: #1652f0;
+	--second-color: #f2f6fe;
+	--green-color: #10d876;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ddd;
+}
+.container {
+	padding: 20px 20px;
+	background-color: #fff;
+}
+.flex-s {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* End Global Rules */
+
+/* Start Components  */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+p {
+	color: #565656;
+}
+span:first-child {
+	color: #009688;
+	font-weight: bold;
+}
+span:nth-child(2) {
+	color: #e91f64;
+	font-weight: bold;
+}
+hr {
+	opacity: 0.3;
+}
+header {
+	background-color: #607d8b;
+	width: fit-content;
+	padding: 10px 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+/* End Components  */
+.parent {
+	background-color: #ddd;
+	width: 90%;
+	margin: 20px auto;
+}
+
+/* Start Part 1 */
+
+.part-one .container {
+	height: fit-content;
+	display: flex;
+	margin: 20px 0;
+}
+@media (max-width: 800px) {
+	.part-one .container {
+		flex-direction: column;
+	}
+	.part-one .user {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-right: none;
+		border-bottom: 1px solid #eee;
+		padding-right: 0;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.part-one .info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.part-one .info p {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+.user {
+	border-right: 1px solid #eee;
+	padding-right: 20px;
+}
+.part-one .image {
+	background-image: url(https://lh3.googleusercontent.com/Z_2BvWrupAUTKTygttipbz-9_r9n61Q9NNkLAGunKJ6FjTgt_PSomeG1j_QY50-DO0hN2TvTzpommk5wHErbYU9XnUCc4g1lmaNQ-sNIoeeht64OgiFz_jjNStJmb-EZXJco8Ck27afrPjqsT43qaVeNmq3U-E_kVuvW1n1o80lzibpOib3GtBA0NdDPt8pFBqjguhNbhmNW7G5IZc9_YJPMpOVsbh58AjPkQeN957T-IB7D4ntA43r4MNrXQ-s0eXbMUGpcjrY88PCEBOgU6O6SHQdPVucwlJt3yjRqiMnrv8iNGHfal_H9SyQ2cs-mUXDRkkG77ce0f8H6bJ1miRAOUTSSyp9MvB0CyMGJnae6FmE3vYiuxpnyxBxnhsUM243_19CORU1fE2EmFQJy5-3y7CIIJg4Lspa4pIr06BnzLbpfnCgW1M95F524i4EXdINJZd2QYiO7Pev01gW1vqnrGpCpm8m-vqrKc4nkPJkJJcrEW531uFo4_Vua-UI7hxsheUG61qAHvWRUNnkc32Pcbial2SoL0zty85d29BKhiz8RBUpFgTwgvK4O-f5qf6ARzuw3GcZf2AWrcvBdnDKiZUe-B0MysMKU1zWzayeTcRDID3kLY3hStR0xK63P37Q9BYfijV46CcYwIFD-wB0MkSvIaFtj-VzAbxzsuocpRt4X8_p6zxa8jnfwc494sKkDBNZcR__C4R7jEOpbySk=w780-h921-no?authuser=0);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	grid-area: i;
+	margin-left: 35px;
+	z-index: 1;
+}
+.part-one h4 {
+	grid-area: h4;
+	margin: 10px 0px;
+	font-size: 20px;
+	text-align: center;
+}
+.part-one .container .user :nth-child(3) {
+	height: 20px;
+	width: 90%;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.part-one .container :nth-child(3) div {
+	background-color: #009688;
+	width: 75%;
+	height: 20px;
+}
+.part-one .container .info {
+	position: relative;
+}
+.part-one .container .info h1 {
+	margin-left: 20px;
+}
+.part-one .container .info p {
+	margin-left: 20px;
+	line-height: 2;
+}
+.part-one .container .info p::after {
+	content: "140 Days The Ship";
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+/* End Part 1 */
+/* Start Part 2 */
+.part-two {
+	margin: 20px 0;
+}
+.part-two .container div {
+	margin: 15px 0;
+}
+/* End Part 2 */
+/* Start Part 3 */
+.part-three {
+	margin: 20px 0;
+}
+.part-three .container .photos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 80px);
+	grid-gap: 10px;
+	width: 100%;
+}
+.part-three .container .photos div {
+	/* width: 80px; */
+	height: 100px;
+}
+.part-three .container .photos div img {
+	width: 100%;
+}
+.part-three .container .photos div:nth-child(6),
+.part-three .container .photos div:nth-child(10),
+.part-three .container .photos div:nth-child(13),
+.part-three .container .photos div:nth-child(15),
+.part-three .container .photos div:nth-child(17),
+.part-three .container .photos div:nth-child(20) {
+	opacity: 0.4;
+}
+
+/* End Part 3 */
+/* Start Part 4 */
+.part-four {
+	margin: 20px 0;
+}
+.part-four .container div span:first-of-type {
+	color: #ff2c2c;
+}
+.part-four .container div span:last-of-type {
+	color: #4970ff;
+}
+/* End Part 4 */
+
+/* Start Part 5 */
+.part-five {
+	margin: 20px 0;
+}
+.part-five div {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.part-five div p:last-child {
+	color: green;
+	font-weight: bold;
+}
+.part-five .container .no p:last-child {
+	color: red;
+}
+/* End Part 5 */

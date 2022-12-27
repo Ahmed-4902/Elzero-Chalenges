@@ -1,0 +1,73 @@
+/* Start Global Rules */
+:root {
+	--red: #e94235;
+	--yellow: #fabb05;
+	--green: #34a853;
+	--blue: #4285f4;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+	font-family: "Open Sans", sans-serif;
+	list-style: none;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* End Global Rules */
+div {
+	padding: 5px 6px;
+	border-radius: 60px;
+	position: relative;
+	overflow: hidden;
+}
+p {
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 30px;
+}
+div:after {
+	content: "";
+	position: absolute;
+	background-color: red;
+	width: 100%;
+	--aspect-ratio: 1/1;
+	padding-bottom: calc(100% / (var(--aspect-ratio)));
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -2;
+	background: conic-gradient(
+		var(--blue) 12.5%,
+		var(--green) 12.5%,
+		var(--green) 25%,
+		var(--yellow) 25%,
+		var(--yellow) 37.5%,
+		var(--red) 37.5%,
+		var(--red) 50%,
+
+		var(--blue) 50%,
+		var(--blue) 62.5%,
+		var(--green) 62.5%,
+		var(--green) 75%,
+		var(--yellow) 75%,
+		var(--yellow) 87.5%,
+		var(--red) 85.5%,
+		var(--red) 100%
+	);
+	animation: turn 5s linear infinite;
+}
+@keyframes turn {
+	to {
+		transform: translate(-50%, -50%) rotate(1turn);
+	}
+}

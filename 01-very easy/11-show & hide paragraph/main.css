@@ -1,0 +1,37 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+}
+body {
+	height: 100vh;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.button {
+	background-color: #02968c;
+	width: fit-content;
+	padding: 6px;
+	border-radius: 5px;
+	color: #fff;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.button:hover + p {
+	visibility: visible;
+}
+p {
+	background-color: #ddd;
+	padding: 15px 30px;
+	visibility: hidden;
+	transition: 0.4s;
+}

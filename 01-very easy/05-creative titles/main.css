@@ -1,0 +1,105 @@
+body {
+	font-family: sans-serif;
+}
+h3 {
+	font-weight: bold;
+}
+p {
+	position: relative;
+}
+.blue {
+	color: #2e6dcf;
+}
+.red {
+	color: #d33e3e;
+}
+.green {
+	color: #309e0e;
+}
+.orange {
+	color: #cd661a;
+}
+/* Start  The line */
+.blue::before,
+.red::before,
+.green::before,
+.orange::before {
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 2px;
+	width: 150px;
+	height: 1.5px;
+	background-image: linear-gradient(to right, #2e6dcf 50%, #ddd 50%);
+}
+
+.red::before {
+	background-image: linear-gradient(to right, #d33e3e 50%, #ddd 50%);
+}
+.green::before {
+	background-image: linear-gradient(to right, #309e0e 50%, #ddd 50%);
+}
+.orange::before {
+	background-image: linear-gradient(to right, #cd661a 50%, #ddd 50%);
+}
+/* end  The line */
+
+.circle::after,
+.box::after,
+.triangle-up::after,
+.triangle-down::after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 20px;
+	left: 2px;
+}
+.circle::after {
+	border-radius: 50%;
+	border: 5px solid;
+	border-color: #2e6dcf, #d33e3e, #309e0e, #cd661a;
+}
+.box::after {
+	border-radius: 0%;
+	border: 5px solid;
+	border-color: #2e6dcf, #d33e3e, #309e0e, #cd661a;
+}
+.triangle-up.blue::after {
+	border-color: transparent transparent #2e6dcf;
+}
+.triangle-up.red::after {
+	border-color: transparent transparent #d33e3e;
+}
+.triangle-up.green::after {
+	border-color: transparent transparent #309e0e;
+}
+.triangle-up.orange::after {
+	border-color: transparent transparent #cd661a;
+}
+.triangle-up::after {
+	content: "";
+	top: 7px;
+	left: 1px;
+	border-style: solid;
+	border-width: 10px;
+}
+.triangle-down.blue::after {
+	border-color: #2e6dcf transparent transparent;
+}
+.triangle-down.red::after {
+	border-color: #d33e3e transparent transparent;
+}
+.triangle-down.green::after {
+	border-color: #309e0e transparent transparent;
+}
+.triangle-down.orange::after {
+	border-color: #cd661a transparent transparent;
+}
+.triangle-down::after {
+	content: "";
+	top: 25px;
+	left: 1px;
+	border-style: solid;
+	border-width: 10px;
+}
