@@ -1,7 +1,5 @@
 /* Start Global Rules */
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -42,11 +40,11 @@ form h2 {
 }
 form div:not(div:last-of-type) {
 	width: 100%;
-	padding: 20px 30px;
 	border-bottom: 1px solid rgb(221, 220, 220);
 }
 form div input {
 	border: none;
+	padding: 20px 30px 10px;
 }
 
 form input:focus {
@@ -61,7 +59,8 @@ form label:before {
 	font-weight: 900;
 	color: #777474;
 	bottom: 2px;
-	left: -23px;
+
+	left: 5px;
 }
 form label#name::before {
 	content: "\f007";
